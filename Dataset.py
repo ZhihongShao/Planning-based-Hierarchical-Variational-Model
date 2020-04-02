@@ -23,7 +23,7 @@ class EPWDataset:
     def __init__(self):
         self.config = Config.config
         if not os.path.exists(self.config.vocab_file):
-            pickle.dump(Vocabulary.Vocabulary(), open(self.config_file, "wb"))
+            pickle.dump(Vocabulary.Vocabulary(), open(self.config.vocab_file, "wb"))
         self.vocab = pickle.load(open(self.config.vocab_file, "rb"))
         utils.print_out("finish reading vocab : {}".format(len(self.vocab.id2word)))
         self.cate2FK = {
