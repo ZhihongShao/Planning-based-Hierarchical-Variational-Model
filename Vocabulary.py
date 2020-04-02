@@ -30,7 +30,7 @@ class Vocabulary:
 		self.id2word = ["<S>", "</S>", 0] + [0] * len(featVal)
 		self.id2vec = [0] * (3 + len(featVal))
 		nxt = 3
-		with open(self.config.wordvec_file) as file:
+		with open(self.config.wordvec_file, "r") as file:
 			for _ in range(self.config.skip_cnt):
 				file.readline()
 			for line in file:

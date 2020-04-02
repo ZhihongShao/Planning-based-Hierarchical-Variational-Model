@@ -24,7 +24,7 @@ This project is a Tensorflow implementation of our work.
     *   We provided most preprocessed data under `./data/processed/` except pre-trained word embeddings which can be generated with the following command line:
     
     ```
-    python preprocess.py
+    bash preprocess.sh
     ```
 
 *   Train
