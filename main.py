@@ -116,7 +116,7 @@ def train(model_name, restore=True):
 	import_lib()
 	global config, logger
 	config = Config.config
-	dataset = Dataset.Dataset()
+	dataset = Dataset.EPWDataset()
 	dataset.prepare_dataset()
 	logger = utils.get_logger(model_name)
 
